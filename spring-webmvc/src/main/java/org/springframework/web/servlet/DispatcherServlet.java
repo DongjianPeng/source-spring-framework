@@ -1045,7 +1045,7 @@ public class DispatcherServlet extends FrameworkServlet {
 				multipartRequestParsed = (processedRequest != request);
 
 				// Determine handler for the current request.
-				// 从handler mapping中找到哪个handler来处理请求
+				// 从handler mapping中找到哪个handler（Controller中的哪个方法）来处理请求
 				mappedHandler = getHandler(processedRequest);
 				if (mappedHandler == null) {
 					noHandlerFound(processedRequest, response);
